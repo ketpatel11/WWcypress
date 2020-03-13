@@ -1,0 +1,10 @@
+{
+  "viewportWidth": 2000,
+  "viewportHeight": 1200,
+  "chromeWebSecurity": false,
+  "modifyObstructiveCode": false,
+  "watchForFileChanges": false,
+  "projectId": "a2rjd7",
+  "reporter": "mochawesome",
+  "baseUrl": "https://www.weightwatchers.com/us/"
+}

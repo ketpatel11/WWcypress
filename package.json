@@ -1,0 +1,28 @@
+{
+  "name": "Cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run",
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recordDashBoardTest": "npm run test -- --record --key 5a4a4ab1-36a8-4194-b617-6dae00788dc7 --reporter mochawesome",
+    "weightWatchers": "npm run test -- --spec \"cypress/integration/examples/weightWatchers/*\" --record --key 5a4a4ab1-36a8-4194-b617-6dae00788dc7 --reporter mochawesome",
+    "cypress": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@applitools/eyes-cypress": "^3.9.13"
+  },
+  "devDependencies": {
+    "cypress": "^4.1.0",
+    "cypress-iframe": "^1.0.1",
+    "mailosaur": "^6.0.4",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0"
+  }
+}
