@@ -30,7 +30,7 @@ it('Should be able to find studio in my area ',() => {
     findAMeetingPage.getUrl().should('includes', '/find-a-meeting/1180510/ww-studio-flatiron-new-york-ny')
     findAMeetingPage.getLocationName().should('contain', 'WW Studio Flatiron')
     cy.get('.hours-list-item-wrapper.hours-list--currentday').invoke('text').then((text) => {
-        cy.log(text)//print scheduled time for number of meeting left
+        cy.log(text)//print scheduled time for number of meeting each person have
     })
     })
 })
