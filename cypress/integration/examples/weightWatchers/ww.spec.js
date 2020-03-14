@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
-import WeightWatchersHomePage from '../../support/pageObjects/weightWatchersHomePage'
-import FindAMeetingPage from '../../support/pageObjects/findAMeetingPage'
+import WeightWatchersHomePage from '../../../support/pageObjects/weightWatchersHomePage'
+import FindAMeetingPage from '../../../support/pageObjects/findAMeetingPage'
 
 describe('Find studio', function() {
 
