@@ -32,5 +32,11 @@ it('Should be able to find studio in my area ',() => {
     cy.get('.hours-list-item-wrapper.hours-list--currentday').invoke('text').then((text) => {
         cy.log(text)//print scheduled time for number of meeting each person have
     })
+    cy.get('.schedule-detailed > :nth-child(1)').invoke('text').then((text) => {
+        cy.log(text)//Print Sunday schedule
+    })
+    cy.get('.meeting-schedule__schedule').invoke('text').then((text) => {
+        cy.log(text)//print Full schedule for the week
+    })
     })
 })
