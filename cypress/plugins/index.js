@@ -17,13 +17,27 @@ module.exports = (on, config) => {
 }
 
 module.exports = (on, config) => {
-  on("before:browser:launch", (browser = {}, args) => {
-    if (browser.name === "chrome") {
-      args.push("--disable-site-isolation-trials");
-      return args;
+  on('before:browser:launch', (browser = {}, launchOptions) => {
+    // `args` is an array of all the arguments that will
+    // be passed to browsers when it launches
+    console.log(launchOptions.args) // print all current args
+
+    if (browser.family === 'chromium' && browser.name !== 'electron') {
+      // auto open devtools
+      launchOptions.args.push('--auto-open-devtools-for-tabs')
+
+      // whatever you return here becomes the launchOptions
+      return launchOptions
     }
-  });
-};
+
+    if (browser.family === 'firefox') {
+      // auto open devtools
+      launchOptions.args.push('-devtools')
+
+      return launchOptions
+    }
+  })
+}
 
 
 require('@applitools/eyes-cypress')(module);

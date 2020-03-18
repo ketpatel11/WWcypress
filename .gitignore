@@ -17,3 +17,4 @@ cypress/videos/examples/slingShothealth/sample-spec.js.mp4
 cypress/screenshots/examples/slingShothealth/sample-spec.js/site search -- search some thing (failed).png
 mochawesome-report/mochawesome.html
 mochawesome-report/mochawesome.json
+cypress/videos/examples/weightWatchers/ww.spec.js.mp4

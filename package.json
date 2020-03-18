@@ -9,7 +9,7 @@
     "headTest": "npm run test -- --headed",
     "chromeTest": "npm run test -- --browser chrome",
     "recordDashBoardTest": "npm run test -- --record --key 5a4a4ab1-36a8-4194-b617-6dae00788dc7 --reporter mochawesome",
-    "weightWatchers": "npm run test -- --spec \"cypress/integration/examples/weightWatchers/ww.spec.js/*\" --record --key 5a4a4ab1-36a8-4194-b617-6dae00788dc7 --reporter mochawesome",
+    "weightWatchers": "npm run test -- --spec \"WEIGHTWATCHERS/cypress/integration/examples/weightWatchers/ww.spec.js/*\" --record --key 5a4a4ab1-36a8-4194-b617-6dae00788dc7 --reporter mochawesome",
     "cypress": "cypress open"
   },
   "keywords": [],
